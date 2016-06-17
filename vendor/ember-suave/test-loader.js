@@ -1,7 +1,7 @@
 /* globals jQuery, QUnit */
 
 jQuery(document).ready(function () {
-  var TestLoaderModule = require('ember-cli/test-loader');
+  var TestLoaderModule = require('ember-cli-test-loader/test-support/index');
   var addModuleExcludeMatcher = TestLoaderModule['addModuleExcludeMatcher'];
 
   function isJscsDisabled() { return typeof QUnit === 'undefined' ? false : QUnit.urlParams.nojscs; }
